@@ -1,0 +1,68 @@
+##01##
+curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+
+##02##
+cat countries.txt
+
+##03##
+less countries.txt 
+
+##04##
+less countries.txt
+/Zambia
+
+##05##
+less countries.txt
+/Brazil
+
+##06##
+less countries.txt
+/brazil
+Pattern not found.
+
+OR
+
+less countries.txt
+-i /brazil
+
+######
+cat > phrases.txt 
+Raposa em ingles e fox
+Nao sabia disso
+E legal aprender outra lingua
+Fox e bem curto
+Sim demais
+Fox nao era um canal de tv?
+Sim era, mas veio o nome do animal.
+
+
+##07##
+grep -v 'fox' phrases.txt
+
+##08##
+wc -w phrases.txt 
+34 phrases.txt
+
+##09##
+wc -l phrases.txt 
+7 phrases.txt
+
+##10##
+touch empty.tbt empty.pdf
+
+##11##
+ls -a
+.   countries.txt  empty.tbt     phrases.txt  top_skills.txt
+..  empty.pdf      phrases2.txt  skills2.txt
+
+##12##
+ls *.txt
+countries.txt  phrases2.txt  phrases.txt  skills2.txt  top_skills.txt
+
+##13##
+ls *.txt *.tbt
+countries.txt  phrases2.txt  skills2.txt
+empty.tbt      phrases.txt   top_skills.txt
+
+##14##
+man ls

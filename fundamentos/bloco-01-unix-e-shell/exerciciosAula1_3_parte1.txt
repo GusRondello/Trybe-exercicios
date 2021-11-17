@@ -1,0 +1,68 @@
+##01##
+mkdir unix_testes
+
+##02##
+touch trybe.txt
+
+##03##
+cp trybe.txt trybe_backup.txt
+
+##04##
+cp trybe{,_backup2}.txt
+
+##05##
+mkdir backup
+
+##06##
+mv trybe_backup.txt backup/
+
+##07##
+mkdir backup2
+
+##08##
+cd backup/
+ls
+mv trybe_backup.txt ../backup2
+
+##09##
+rm -rf backup/
+ls
+
+##10##
+mv backup2/ backup
+ls
+
+##11##
+~/Trybe/Trybe-exercicios/fundamentos/bloco-01-unix-e-shell/unix_testes$ ls -l
+total 16
+drwxrwxr-x 2 grondello grondello 4096 nov 11 18:29 backup
+-rw-rw-r-- 1 grondello grondello   99 nov 11 18:00 phrases2.txt
+-rw-rw-r-- 1 grondello grondello   53 nov 11 16:06 skills2.txt
+-rw-rw-r-- 1 grondello grondello   19 nov 11 16:15 top_skills.txt
+-rw-rw-r-- 1 grondello grondello    0 nov 11 18:25 trybe_backup2.txt
+-rw-rw-r-- 1 grondello grondello    0 nov 11 18:19 trybe.txt
+
+##12##
+rm -rf backup/
+
+##13##
+clear
+
+##14##
+head -5 skills.txt 
+Internet
+Unix
+Bash
+HTML
+CSS
+
+##15##
+tail -4 skills.txt 
+CSS
+JavaScript
+React
+SQL
+
+##16##
+rm -rf *'.txt'
+

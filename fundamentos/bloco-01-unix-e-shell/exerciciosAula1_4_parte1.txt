@@ -1,0 +1,59 @@
+##01##	
+cd unix_testes/
+
+##02##	
+cat > skills2.txt
+Internet
+Unix
+Bash
+<cntrl+d>
+
+##03##	
+cat >> skills2.txt 
+terminal
+comando
+codar
+teclado
+pc        
+sort skills2.txt 
+Bash
+codar
+comando
+Internet
+pc
+teclado
+terminal
+Unix
+<cntrl+d>
+
+##04##
+wc -l skills2.txt 
+8 skills2.txt
+
+##05##
+sort skills2.txt | head -3 > top_skills.txt
+
+##06##
+cat > phrases2.txt 
+Brasil e bonito demais.
+Esse lanche e caro e bom.
+O rato e feio.
+Burocracia e chata.
+
+##07##
+grep -ic 'b'*'r' phrases2.txt
+
+##08##
+grep -icv 'b'*'r' phrases2.txt 
+
+##09##
+cat >> phrases2.txt 
+Brasil
+Canada 
+<cntrl+d>
+
+##10##
+cat phrases2.txt countries.txt > bunch_of_things.txt
+
+##11##
+sort bunch_of_things.txt

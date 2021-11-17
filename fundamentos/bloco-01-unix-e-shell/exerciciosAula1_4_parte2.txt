@@ -1,0 +1,35 @@
+##01##
+cd Trybe/Trybe-exercicios/fundamentos/bloco-01-unix-e-shell/unix_testes/
+
+##02##
+ls -l
+total 24
+-rw-rw-r-- 1 grondello grondello 1941 nov 11 20:16 bunch_of_things.txt
+-rw-rw-r-- 1 grondello grondello 1842 nov 11 19:00 countries.txt
+-rw-rw-r-- 1 grondello grondello    0 nov 11 19:28 empty.pdf
+-rw-rw-r-- 1 grondello grondello    0 nov 11 19:28 empty.tbt
+-rw-rw-r-- 1 grondello grondello   99 nov 11 18:00 phrases2.txt
+-rw-rw-r-- 1 grondello grondello  160 nov 11 19:23 phrases.txt
+-rw-rw-r-- 1 grondello grondello   53 nov 11 16:06 skills2.txt
+-rw-rw-r-- 1 grondello grondello   19 nov 11 16:15 top_skills.txt
+
+##03##
+chmod o+w bunch_of_things.txt 
+ls -l
+total 24
+-rw-rw-rw- 1 grondello grondello 1942 nov 11 20:32 bunch_of_things.txt
+
+##04##
+chmod au-w bunch_of_things.txt 
+ls -l
+total 24
+-r--r--r-- 1 grondello grondello 1942 nov 11 20:32 bunch_of_things.txt
+
+
+##05##
+chmod 644 bunch_of_things.txt
+ls -l
+total 24
+-rw-r--r-- 1 grondello grondello 1942 nov 11 20:32 bunch_of_things.txt
+
+

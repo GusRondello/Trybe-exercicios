@@ -1,0 +1,63 @@
+##01##
+jobs
+
+##02##
+sleep 30 &
+
+##03##
+ps
+    PID TTY          TIME CMD
+  39283 pts/0    00:00:00 bash
+  40955 pts/0    00:00:00 sleep
+  40956 pts/0    00:00:00 ps
+kill 40955
+ps
+    PID TTY          TIME CMD
+  39283 pts/0    00:00:00 bash
+  40959 pts/0    00:00:00 ps
+[1]+  Terminado               sleep 30
+
+##04##
+sleep 30
+<ctrl+z>
+bg 1
+jobs
+[1]+  Executando              sleep 30 &
+
+##05##
+sleep 300 &
+
+##06##
+sleep 200
+<ctrl+z>
+sleep 100
+<ctrl+z>
+
+jobs
+[1]   Executando              sleep 300 &
+[2]-  Executando              sleep 200 &
+[3]+  Executando              sleep 100 &
+
+##07##
+[1]   Executando              sleep 300 &
+[2]-  Parado                  sleep 200
+[3]+  Parado                  sleep 100
+
+fg 1
+<ctrl+z>
+
+##08##
+bg 3
+jobs
+[1]+  Parado                  sleep 300
+[2]   Parado                  sleep 200
+[3]-  Executando              sleep 100 &
+
+##09##
+kill %1 %2 %3
+[1]   Terminado               sleep 300
+[2]-  Terminado               sleep 200
+[3]+  Terminado               sleep 100
+
+
+
