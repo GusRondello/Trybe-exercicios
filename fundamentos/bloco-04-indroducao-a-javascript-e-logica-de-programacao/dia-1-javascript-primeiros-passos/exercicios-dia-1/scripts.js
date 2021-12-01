@@ -1,12 +1,12 @@
 //Definindo constantes para exercicios:
 
-/* const a = 8;
+const num1 = 8;
 const b = 4;
-const c = 6; */
+const c = 6;
 
 //Exercicio 1:
-
-/* const adicao = a + b
+/*
+const adicao = a + b
 const subtracao = a - b;
 const multiplicacao = a * b;
 const divisao = a / b;
