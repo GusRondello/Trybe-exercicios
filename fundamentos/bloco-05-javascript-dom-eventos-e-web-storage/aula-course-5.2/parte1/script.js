@@ -66,3 +66,16 @@ document.querySelector("#primeiroFilhoDoFilho").appendChild(novoFilho3);
 novoFilho3.id = filhoDoFilhoDoFilhoDoFilho;
 document.querySelector("#filhoDoFilhoDoFilhoDoFilho").parentElement.parentElement.nextElementSibling;
 */
+
+// 5 
+// Remover todos os id dentro de remova todos elementos de #paiDoPai menos #pai #elementoOndeVoceEsta e o #primeiroFilhoDoFilho
+
+let listaFilhos = document.getElementById("pai").childNodes;
+console.log(listaFilhos);
+
+for (let i = 0; i < listaFilhos.length; i += 1) {
+    let element = listaFilhos[i];
+    if (element.id !== "elementoOndeVoceEsta"){
+        element.remove();
+    }
+}
